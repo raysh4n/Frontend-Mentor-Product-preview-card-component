@@ -39,8 +39,8 @@ Mobile
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [here]( https://www.frontendmentor.io/solutions/responsive-product-preview-card-component-bDg0wkNU-9)
+- Live Site URL: [here](https://fe-mentor-product-previewcard-raysh4n.netlify.app/)
 
 ## My process
 
