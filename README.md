@@ -29,11 +29,11 @@ Users should be able to:
 
 ### Screenshot
 Desktop
-![](./screenshot.jpg)
+![](./desktop%20Screenshot%202025-01-12%20143302.png)
 
 
 Mobile 
-![](./screenshot.jpg)
+![](./mobile%20Screenshot%202025-01-12%20143336.png)
 
 
 
@@ -57,3 +57,4 @@ Mobile
 
 - With `max-width` or height and `background-image:cover` being set, when you resize, the image will be cropped along the way too. Because the width will keep changing when window being resized.  
 
+- set the photo height to 43rem is important in this case. 
