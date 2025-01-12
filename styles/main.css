@@ -1,0 +1,184 @@
+:root {
+	/*PRIMARY*/
+	--clr-dark-cyan: hsl(158, 36%, 37%);
+	--clr-cream: hsl(30, 38%, 92%);
+
+	/*NEUTRAL*/
+	--clr-dark-blue: hsl(212, 21%, 14%);
+	--clr-dark-grayish-blue: hsl(228, 12%, 48%);
+	--clr-white: hsl(0, 0%, 100%);
+
+	/*FONT-WEIGHT*/
+	--font-weight-medium: 500;
+	--font-weight-heavy: 700;
+
+	--border-standard: 10px;
+
+	/*FONT-SIZE*/
+	--font-size: 18px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size: 18px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	user-select: none;
+	max-width: 100%;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	height: 100dvh;
+
+	/* width:100%; */
+	display: grid;
+	place-items: center;
+	background-color: var(--clr-cream);
+}
+
+.card {
+	background-color: var(--clr-white);
+	/* max-height:100dvh; */
+	/* height:80%; */
+	width: 90%;
+	/* max-width: 55rem; */
+	width:23rem;
+	border-radius: var(--border-standard);
+	overflow: hidden;
+}
+
+.card__photo {
+	background-image: url("/images/image-product-mobile.jpg");
+	/* margin:20rem; */
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* width:100%; */
+	height: 18rem;
+}
+
+.card__info {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+.card__label {
+	font-family: "Montserrat", sans-serif;
+	letter-spacing: 0.2rem;
+	color: var(--clr-dark-grayish-blue);
+	text-transform: uppercase;
+}
+
+.card__title {
+	font-family: "Fraunces", serif;
+	font-size: 1.9rem;
+}
+
+.card__description {
+	line-height: 1.5rem;
+	/* outline: 1px solid black; */
+	color: var(--clr-dark-grayish-blue);
+	/* text-wrap:balance; */
+	/* font-size:0.95rem; */
+}
+
+.card__price {
+	display: flex;
+	gap: 1rem;
+	/* font-weight: var(--font-weight-heavy); */
+	font-family: "Fraunces",serif;
+	/* outline:black 1px solid; */
+}
+
+.card__price-discounted {
+	font-size: 2rem;
+	font-weight: var(--font-weight-heavy);
+	color: var(--clr-dark-cyan);
+	/* outline:black 1px solid; */
+}
+
+.card__price-original {
+	font-family: "Montserrat", sans-serif;
+	/* outline:black 1px solid; */
+	align-self: center;
+	text-decoration: line-through;
+	color: var(--clr-dark-grayish-blue);
+}
+
+.card__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	color: var(--clr-white);
+	border-radius: var(--border-standard);
+	width: 100%;
+	background-color: var(--clr-dark-cyan);
+	padding-block: 1rem;
+	font-weight: var(--font-weight-heavy);
+}
+
+/*sm*/
+@media (min-width: 1000px) {
+	.card {
+		display: flex;
+		flex-direction: row;
+		/* height:100%; */
+		width:60rem;
+	}
+
+	.card__photo {
+		flex: 1;
+		background-image: url("/images/image-product-desktop.jpg");
+		background-size: contain;
+		/* height:100%; */
+		/* width: 100%; */
+		height: 40rem;
+	}
+
+	.card__info {
+		padding: 3rem;
+		flex: 1;
+		/* gap: 2rem; */
+		justify-content: space-between;
+	}
+
+	.card__title {
+		font-size: 4rem;
+	}
+
+	.card__description {
+		line-height: 2rem;
+		/* max-height: 8rem; */
+		padding-right: 1.2rem;
+		/* font-size:1.5rem; */
+		font-size:1.4rem;
+	}
+
+
+.card__price {
+	gap: 1.5rem;
+}
+	
+.card__price-discounted {
+	font-size: 4rem;
+	
+}
+
+.card__price-original {
+	font-size:1.3rem;
+}
+}
